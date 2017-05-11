@@ -1,0 +1,22 @@
+
+.panel-heading{
+    font-size: 28px;
+    text-align: center;
+    }
+.panel-body{
+	font-size: 14px;
+	position: relative;
+}
+
+.panel-body a:last-child{
+	position: absolute;
+    right: 16px;
+}
+.panel,.panel-primary{
+	position: absolute;
+    width:600px ;
+    left: 45%;
+    margin-top: 15px;
+    margin-left: -200px;
+        }
+

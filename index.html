@@ -1,0 +1,38 @@
+
+<!--index.html is a template where all three views will be displayed depending on the 
+state of the system -->
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Employees Details App</title>
+    <!-- load bootstrap css and our custom css file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+        <!-- load angular js, ui-router, and our custom js controller file -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"> </script>
+    <script src="js/controller.js"> </script>  
+  </head>
+
+  <!-- angular app autobootstraps here -->
+  <body ng-app="empApp">
+   
+    <!-- angular controller called here-->
+    <div ng-controller="employeesCtrl">
+
+      <!-- Main Content  -->
+      <div class="container">
+
+        <!-- View Employees is an application that has been tested on Firefox 53.0.2. 
+          It uses AngularJs 1.4.8, Angular UI Router.js 1.0.3 and Bootstrap CSS 3.3.7 along with some customized .js and .css files
+        -->
+        
+        <!-- Viwes will be injected here -->
+        <div ui-view>    </div>
+
+      </div>
+    </div>
+  </body>
+</html>

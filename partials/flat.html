@@ -1,0 +1,43 @@
+
+<!--flat.html dispalys a flattened non-hierarchical view of all the employees (names and roles ). -->
+
+<!-- Main panel holding the content-->
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    Flat view of Employee Data
+  </div>
+  
+  <div class="panel-body">
+  
+   <!-- dispalys the data as a table-->
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Team</th>
+        <tr>
+      </thead>
+      <tbody> <!--for getting the managers -->
+        <tr  ng-repeat="x in empData | flattenRows ">
+          <td><strong>{{ x.name }}</strong></td>
+          <td>{{ x.role }}</td>
+          <td>{{x.teamMemberNames}}</td>
+        </tr>
+        
+      </tbody>
+    </table>
+
+    <!-- Navigation Buttons  providing other options-->
+
+    <!-- Home View Navigation Button-->
+    <a ui-sref="home" class="btn btn-primary btn-lg">
+      <span class="glyphicon glyphicon-home"></span> Home
+    </a>
+
+    <!--List View Navigation Button-->
+    <a ui-sref="list" class="btn btn-primary btn-lg">
+      <span class="glyphicon glyphicon-list-alt"></span> List View
+    </a>
+  </div></div></div>
+</div>

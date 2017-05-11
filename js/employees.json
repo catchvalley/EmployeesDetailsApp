@@ -1,0 +1,30 @@
+{
+  "employees": [
+    {
+      "role": "Manager",
+      "name": "Erlich Bachman",
+      "team": [
+        {"role": "Engineer", "name": "Jee Park"},
+        {"role": "Designer", "name": "Bob Ross"},
+        {"role": "Engineer", "name": "Lisa Misa"}
+      ]
+    },
+    {
+      "role": "Manager",
+      "name": "Jeff Bezos",
+      "team": [
+        {"role": "Human Resources", "name": "John Smith"},
+        {"role": "Accountant", "name": "Jill Scott"}
+      ]
+    },
+    {
+      "role": "Manager",
+      "name": "Michael Scott",
+      "team": [
+        {"role": "Accountant", "name": "Oscar Lopez"},
+        {"role": "Assistant Manager", "name": "Dwight Schrudt"},
+        {"role": "Human Resources", "name": "Toby Mitchell"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+
+<!--list.html displays a default hierarchical view (list) of all the employees including there names and roles. -->
+
+<!-- Main panel holding the content-->
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    List View of Employee Data            
+  </div>
+  
+  <div class="panel-body">
+    <!-- dispalys the data as a list-->
+    <ul> 
+      <li > Managers </li>
+      <ul>
+        <li ng-repeat="x in empData "> 
+            {{ x.name }} 
+          <ul> 
+            <li> Team 
+            </li>
+            <ul>
+              <li ng-repeat="y in x.team"> 
+                  {{y.name}} , {{y.role}}
+              </li>
+            </ul>
+          </ul>
+        </li>
+      </ul>
+    </ul>
+
+     <!-- Navigation Buttons  providing other options-->
+
+     <!-- Home View Navigation Button-->     
+    <a ui-sref="home" class="btn btn-primary btn-lg">
+      <span class="glyphicon glyphicon-home"></span> Home
+    </a>
+
+    <!--Flat View Navigation Button-->
+    <a ui-sref="flat" class="btn btn-primary btn-lg"> 
+      <span class="glyphicon glyphicon-list-alt"></span> Flat View
+    </a>
+  </div>
+</div>
+
+    
+    

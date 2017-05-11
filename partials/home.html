@@ -1,0 +1,36 @@
+
+<!--home.html is a view that lets the user navigate to either of the two views. -->
+
+<!-- Main panel holding the content-->
+<div class="panel panel-primary">
+    <div class="panel-heading">Home Page</div>
+    <div class="panel-body">
+        <p>
+            The site displays the given hierarchical JSON list of employees grouped by their managers in two views, a flat tabular view and a list view in default hierarchical order.
+        </p>
+        
+        <p>
+            The site uses AngularJS and Angular-UI-Router to construct 3 views, transistioning between the view using the Ui-Routers states, defined in the controller.js
+        </p>
+        
+        <p>
+            The page styling is done using Bootstrap.css( panels and glyphicon ) and some custom css styles.
+        </p>
+        
+        <p>
+            Please note that browser security model restrictions allow this to only run in Firefox if running without hosting on web server, as this page loads additional files.
+        </p>
+        
+        <!-- Navigation Buttons allow selecting a particular format for viewing employees roles -->
+
+        <!-- List View Navigation Button-->
+        <a ui-sref="list" class="btn btn-primary btn-lg "> 
+            <span class="glyphicon glyphicon-list"> </span> List View
+        </a>
+
+        <!--Flat View Navigation Button-->
+        <a ui-sref="flat" class="btn btn-primary btn-lg ">
+            <span class="glyphicon glyphicon-list-alt"> </span> Flat View
+        </a>
+    </div>
+</div>
